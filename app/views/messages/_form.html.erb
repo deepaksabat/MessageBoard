@@ -1,0 +1,11 @@
+
+<%= bootstrap_form_for @message do |f| %>
+<div class="form-grouph">
+  <%= f.text_field :title, label: "Message Title" %>
+  <%= f.text_area :description %>
+  </div>
+  <div class="form-action">
+  <%= f.submit "Create", class: "btn btn-default" %>
+  <%= link_to "Back", root_path, class: "btn btn-default" %>
+  </div>
+<% end %>
